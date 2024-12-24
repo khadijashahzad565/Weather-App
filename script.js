@@ -12,7 +12,7 @@ function fetchWeather(city) {
 function showWeather(data) {
     const resultDiv = document.getElementById("result");
     const city = data.name;
-    const condition = data.weather.description;
+    const condition = data.weather[0].description;
     const wind = data.wind.speed;
     const humidity = data.main.humidity;
 
